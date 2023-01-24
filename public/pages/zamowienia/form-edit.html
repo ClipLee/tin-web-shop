@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+        <link rel="stylesheet" href="../../css/style.css">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html" class="active">Zamówienia</a></li>
+            <li><a href="../sprzet/sprzet.html">Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Edytuj zamówienie</h2>
+        <form class="form">
+
+            <!-- <label for="id_sprzet_do_sprzedazy">ID<span class="symbol-required">*</span></label>
+            <input type="text" name="id_sprzet_do_sprzedazy" id="id_sprzet_do_sprzedazy" value="700002368312" required>
+            <span id="errorID"></span> -->
+
+            <label for="sprzet_id">Sprzęt<span class="symbol-required">*</span></label>
+            <select name="sprzet_id" id="sprzet_id" required>
+                <option value="">-</option>
+                <option value="1" selected>AMD Ryzen Threadripper PRO 5995WX</option>
+                <option value="2">AMD Radeon PRO W6800 32GB GDDR6</option>
+            </select>
+            <span id="errorsprzet_id"></span>
+
+            <label for="shipmentID">Adres wysyłki<span class="symbol-required">*</span></label>
+            <select name="shipmentID" id="shipmentID" required>
+                <option value="">-</option>
+                <option value="1" selected>Żwirowa 12 04-123, Gniezno, Polska</option>
+                <option value="2">Walczykowa 6, 02-137, Słupsk, Polska</option>
+            </select> <span id="errorshipmentID"></span>
+
+            <label for="special_packaging">Opakowanie prezentowe<span class="symbol-required">*</span></label>
+            <select name="special_packaging" id="special_packaging" required>
+                <option value="">-</option>
+                <option value="1" selected>Tak</option>
+                <option value="2">Nie</option>
+            </select>
+            <span id="error_special_packaging"></span>
+
+            <label for="SN">Numer seryjny<span class="symbol-required">*</span></label>
+            <input type="text" name="serial_number" id="SN" value="KTKRXM5E4N2KWFH" required>
+            <span id="error_SN"></span>
+
+
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit">
+                <a href="../zamowienia/list.html" class="form-button-cancel">Anuluj</a>
+                <p id="errorSummary"></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Krzysztof Lipski, s20901</p>
+    </footer>
+</body>
+
+</html>

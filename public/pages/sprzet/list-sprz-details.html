@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+        <link rel="stylesheet" href="../../css/style.css">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html">Zamówienia</a></li>
+            <li><a href="/pages/sprzet/sprzet.html" class="active">Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Szczegóły sprzętu</h2>
+        <form class="form">
+            <label for="ID">kod z-kom</label>
+            <input type="text" name="ID" id="ID" value="1065198" disabled>
+            <span id="errorID"></span>
+
+            <label for="Manufacturer">Producent</label>
+            <input type="text" name="Manufacturer" id="Manufacturer" value="AMD" disabled>
+            <span id="errorManufacturer"></span>
+
+            <label for="manufacturerID">ID Producenta</label>
+            <input type="text" name="manufacturerID" id="manufacturerID" value="" disabled>
+            <span id="errormanufacturerID"></span>
+
+            <label for="name">Nazwa</label>
+            <input type="text" name="name" id="name" value="AMD Ryzen Threadripper PRO 5995WX" disabled>
+            <span id="error_name"></span>
+
+            <label for="Price">Cena</label>
+            <input type="text" name="Price" id="Price" value="37 999,00 zł" disabled>
+            <span id="errorPrice"></span>
+
+            <label for="Price_netto">Cena netto</label>
+            <input type="text" name="Price_netto" id="Price_netto" value="34 000,00 zł" disabled>
+            <span id="errorPrice_netto"></span>
+
+            <label for="Dimensions">Wymiary paczki</label>
+            <input type="text" name="Dimensions" id="Dimensions" value="20,0 × 25,0 cm" disabled>
+            <span id="errorDimensions"></span>
+
+            <label for="ReleaseDate">Data premiery</label>
+            <input type="date" name="ReleaseDate" id="ReleaseDate" value="1999-02-23" disabled>
+            <span id="errorReleaseDate"></span>
+
+            <a href="/pages/sprzet/form-sprz-edit.html" class="FormEdit">Edytuj</a>
+        </form>
+        <h2>Szczegóły wysyłki</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Wysyłka</th>
+                    <th>Numer seryjny</th>
+                    <th>Adres docelowy</th>
+                    <th>Dane odbiorcy</th>
+                    <th>Sposób dostawy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>23.02.1999</td>
+                    <td>G7E2LN7WLRA6C4S</td>
+                    <td>Żwirowa 12 04-123, Gniezno, Polska</td>
+                    <td>Krzysztof Lipski, s20901@pjwstk.edu.pl</td>
+                    <td>Odbiór w paczkomacie InPost</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="../wysylka/list-wys.html" class="ViewDetails">Powrót</a>
+    </main>
+    <footer>
+        <p>Krzysztof Lipski, s20901</p>
+    </footer>
+</body>
+
+</html>

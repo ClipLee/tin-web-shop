@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="application/javascript" src="/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/js/validationSprzetForm.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html">Zamówienia</a></li>
+            <li><a href="../sprzet/sprzet.html" class="active">Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy sprzęt</h2>
+        <form class="form" novalidate onsubmit="return validateForm();">
+
+            <!-- <label for="ID">kod z-kom<span class="symbol-required" >*</span></label>
+            <input type="text" name="ID" id="ID" value="" required>
+            <span id="errorID" class="errors-text"></span> -->
+
+            <label for="Manufacturer">Producent<span class="symbol-required">*</span><span
+                    class="symbol-required"></span></label>
+            <input type="text" name="Manufacturer" id="Manufacturer" placeholder="Nazwa producenta" required>
+            <span id="errorManufacturer" class="errors-text"></span>
+
+            <label for="manufacturerID">ID Producenta</label>
+            <input type="text" name="manufacturerID" id="manufacturerID" value="">
+            <span id="errormanufacturerID" class="errors-text"></span>
+
+            <label for="name">Nazwa<span class="symbol-required">*</span></label>
+            <input type="text" name="name" id="name" placeholder="Nazwa sprzętu" required>
+            <span id="error_name" class="errors-text"></span>
+
+            <label for="Price">Cena<span class="symbol-required">*</span></label>
+            <input type="text" name="Price" id="Price" placeholder="Cena sprzętu" required>
+            <span id="errorPrice" class="errors-text"></span>
+
+            <label for="Dimensions">Wymiary paczki<span class="symbol-required">*</span></label>
+            <input type="text" name="Dimensions" id="Dimensions" placeholder="np. 20,0 × 25,0 cm " required>
+            <span id="errorDimensions" class="errors-text"></span>
+
+            <label for="ReleaseDate">Data premiery</label>
+            <input type="date" name="ReleaseDate" id="ReleaseDate" value="">
+            <span id="errorReleaseDate" class="errors-text"></span>
+
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit">
+                <a href="/pages/zamowienia/list.html" class="form-button-cancel">Anuluj</a>
+                <p id="errorsSummary" class="errors-text"></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Krzysztof Lipski, s20901</p>
+    </footer>
+</body>
+
+</html>

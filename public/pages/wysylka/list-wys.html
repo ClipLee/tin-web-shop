@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html">Zamówienia</a></li>
+            <li><a href="/pages/sprzet/sprzet.html" >Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html" class="active">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Dane wysyłki</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th></th> 
+                    <th>Adres docelowy</th>
+                    <th>Data wysyłki</th>
+                    <th>Dane odbiorcy</th>
+                    <th>Sposób dostawy</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Żwirowa 12 04-123, Gniezno, Polska</td>
+                    <td>23-02-1999</td>
+                    <td>s20901@pjwstk.e...</td>
+                    <td>Odbiór w paczkomacie InPost</td>
+
+
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a href="/pages/wysylka/list-wys-details.html" class="ViewDetails">Szczegóły</a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pages/wysylka/form-wys-edit.html" class="FormEdit">Edytuj</a>
+                            </li>
+                            <li>
+                                <a href="/pages/wysylka/list-wys-empty.html" class="FormDelete">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Walczykowa 6, 02-137, Słupsk, Polska</td>
+                    <td>21-03-1989</td>
+                    <td>Mirosław Koziera...</td>
+                    <td>Kurier DPD</td>
+
+
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a href="/pages/wysylka/list-wys-details.html" class="ViewDetails">Szczegóły</a>
+                            </li>
+                            <li>
+                                <a href="/pages/wysylka/form-wys-edit.html" class="FormEdit">Edytuj</a>
+                            </li>
+                            <li>
+                                <a href="/pages/wysylka/list-wys-empty.html" class="FormDelete">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <!--Tutaj wstaw wiersze dodatkowe-->
+            </tbody>
+        </table>
+        <p><a href="/pages/wysylka/form-wys.html" class="button-add">Dodaj nowe dane adresowe</a></p>
+    </main>
+    <footer>
+        <p>Krzysztof Lipski, s20901</p>
+    </footer>
+</body>
+
+</html>

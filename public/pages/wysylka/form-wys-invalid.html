@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html">Zamówienia</a></li>
+            <li><a href="../sprzet/sprzet.html">Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html" class="active">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowe dane wysyłki</h2>
+        <form class="form">
+
+            <!-- <label for="ID">ID<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="ID" id="ID" value="" disabled>
+            <span class="errors-text" id="errorID">To pole nie może być puste</span> -->
+
+            <label for="SendDate">Data wysyłki</label>
+            <input type="date" name="SendDate" id="SendDate" min="1999-02-23" max="2030-01-01" value="">
+            <span id="errorSendDate" class="errors-text"></span>
+
+            <label for="deliveryAdress">Adres docelowy<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="deliveryAdress" id="deliveryAdress" value="" required>
+            <span id="errordeliveryAddress" class="errors-text">To pole nie może być puste</span>
+
+            <label for="PersDetails">Dane odbiorcy<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="PersDetails" id="PersDetails" value="" required>
+            <span id="errorPersDetails" class="errors-text">To pole nie może być puste</span>
+
+            <label for="delivery">Sposób dostawy<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="delivery" id="delivery" value="" required>
+            <span id="errordelivery" class="errors-text">To pole nie może być puste</span>
+
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit">
+                <a href="/pages/wysylka/list-wys.html" class="form-button-cancel">Anuluj</a>
+                <p id="errorSummary" class="errors-text"><b>Formularz zawiera błędy</b></p>
+            </div>
+        </form>
+        <footer>
+            <p>Krzysztof Lipski, s20901</p>
+        </footer>
+    </main>
+</body>
+
+</html>

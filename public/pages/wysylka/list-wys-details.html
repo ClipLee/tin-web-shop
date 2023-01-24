@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+        <link rel="stylesheet" href="../../css/style.css">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html">Zamówienia</a></li>
+            <li><a href="../sprzet/sprzet.html">Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html" class="active">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Szczegóły danych wysyłki</h2>
+        <form class="form">
+            <label for="ID">ID</label>
+            <input type="number" name="ID" id="ID" value="1" disabled>
+            <span id="errorID"></span>
+
+            <label for="SendDate">Data wysyłki</label>
+            <input type="date" name="SendDate" id="SendDate" value="1999-02-23" disabled>
+            <span id="errorSendDate"></span>
+
+            <label for="deliveryAdress">Adres docelowy</label>
+            <input type="text" name="deliveryAdress" id="deliveryAdress" value="Żwirowa 12 04-123, Gniezno, Polska"
+                disabled>
+            <span id="errordeliveryAddress"></span>
+
+            <label for="PersDetails">Dane odbiorcy</label>
+            <input type="text" name="PersDetails" id="PersDetails" value="Krzysztof Lipski, s20901@pjwstk.edu.pl"
+                disabled>
+            <span id="errorPersDetails"></span>
+
+            <label for="delivery">Sposób dostawy</label>
+            <input type="text" name="delivery" id="delivery" value="Odbiór w paczkomacie InPost" disabled>
+            <span id="errordelivery"></span>
+
+            <div>
+                <a href="/pages/wysylka/form-wys-edit.html" class="FormEdit">Edytuj</a>
+            </div>
+
+        </form>
+        <h2>Szczegóły sprzętu</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Sprzęt</th>
+                    <th>Cena</th>
+                    <th>Opakowanie prezentowe</th>
+                    <th>Numer seryjny</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AMD Ryzen Threadripper PRO 5995WX</td>
+                    <td>37 999,00 zł</td>
+                    <td>Nie</td>
+                    <td>KTKRXM5E4N2KWFH</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="../wysylka/list-wys.html" class="ViewDetails">Powrót</a>
+    </main>
+    <footer>
+        <p>Krzysztof Lipski, s20901</p>
+    </footer>
+</body>
+
+</html>

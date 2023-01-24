@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep internetowy z-kom</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>z-kom</h1>
+        <img src="../../images/IMG_2202.png" alt="logo sklepu z-kom">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="/pages/zamowienia/list.html">Zamówienia</a></li>
+            <li><a href="../sprzet/sprzet.html" class="active">Sprzęt</a></li>
+            <li><a href="/pages/wysylka/list-wys.html">Wysylka</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy sprzęt</h2>
+        <form class="form">
+            <!-- <label for="ID">kod z-kom<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="ID" id="ID" required>
+            <span id="errorID" class="errors-text">To pole nie może być puste</span> -->
+
+            <label for="manufacturer">Producent<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="manufacturer" id="manufacturer" required>
+            <span id="errormmanufacturer" class="errors-text">To pole nie może być puste</span>
+
+            <label for="manufacturerID">ID Producenta</label>
+            <input type="text" name="manufacturerID" id="manufacturerID" value="">
+            <span id="errormanufacturerID"></span>
+
+            <label for="name">Nazwa<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="name" id="name" required>
+            <span id="error_name" class="errors-text">To pole nie może być puste</span>
+
+            <label for="Price">Cena<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="Price" id="Price" required>
+            <span id="error_Price" class="errors-text">To pole nie może być puste</span>
+
+            <label for="Dimensions">Wymiary paczki<span class="symbol-required">*</span></label>
+            <input class="error-input" type="text" name="Dimensions" id="Dimensions" required>
+            <span id="error_Dimensions" class="errors-text">To pole nie może być puste</span>
+
+            <label for="ReleaseDate">Data premiery</label>
+            <input type="date" name="ReleaseDate" id="ReleaseDate" value="">
+            <span id="errorReleaseDate"></span>
+
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit">
+                <a href="/pages/zamowienia/list.html" class="form-button-cancel">Anuluj</a>
+                <p id="errorSummary" class="errors-text"><b>Formularz zawiera błędy</b></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Krzysztof Lipski, s20901</p>
+    </footer>
+</body>
+
+</html>
