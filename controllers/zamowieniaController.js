@@ -1,14 +1,14 @@
 const { Router } = require("express");
 
 exports.showZamowieniaList = (req, res, next) => {
-    res.render('pages/sprzet/list', {});
+    res.render('pages/zamowienia/list', {});
 }
 
 exports.showAddZamowieniaForm = (req, res, next) => {
-    res.render('pages/sprzet/form', {});
+    res.render('pages/zamowienia/form', {});
 }
 
 exports.showZamowieniaDetails = (req, res, next) => {
-    res.render('pages/sprzet/list-details', {});
+    res.render('pages/zamowienia/list-details', {});
 }
 
