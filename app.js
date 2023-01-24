@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 const sprzetRouter = require('./routes/sprzetRoute'); //pierwsza linia poprawiona -- import nowego routera
+const wysylkaRouter = require('./routes/wysylkaRoute');
+const zamowieniaRouter = require('./routes/zamowieniaRoute');
 var app = express();
 
 // view engine setup
@@ -20,14 +22,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/sprzet', sprzetRouter); //druga linia poprawiona -- podlaczenie nowego routera
+app.use('/list-wys', wysylkaRouter);
+app.use('/list', zamowieniaRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
