@@ -17,4 +17,3 @@ exports.showWysylkaDetails = (req, res, next) => {
         navLocation: 'wys'
     });
 }
-

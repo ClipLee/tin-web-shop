@@ -17,4 +17,3 @@ exports.showZamowieniaDetails = (req, res, next) => {
         navLocation: 'zam'
     });
 }
-
