@@ -3,6 +3,8 @@ const router = express.Router();
 
 const sprzetControler = require('../controllers/sprzetController');
 
+router.get('/', sprzetControler.showSprzetList);
+
 router.get('/add', sprzetController.showAddSprzetForm);
 router.get('/details/:sprzId', sprzetControler.showSprzetDetails);
 

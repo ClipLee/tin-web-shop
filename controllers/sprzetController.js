@@ -12,4 +12,3 @@ exports.showSprzetDetails = (req, res, next) => {
     res.render('pages/sprzet/list-sprz-details', {});
 }
 
-Router.length('/', sprzetController.showSprzetList); //zadanie http -- żądania http typu GET pod adresem / będą przekierowane na metodę showSprzetList 
