@@ -11,4 +11,3 @@ exports.showAddSprzetForm = (req, res, next) => {
 exports.showSprzetDetails = (req, res, next) => {
     res.render('pages/sprzet/list-sprz-details', {});
 }
-
