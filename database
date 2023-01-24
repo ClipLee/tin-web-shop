@@ -1,0 +1,61 @@
+CREATE SCHEMA IF NOT EXISTS `tin-projekt-lipski-s20901`;
+
+-- Table: Sprzet
+CREATE TABLE IF NOT EXISTS `tin-projekt-lipski-s20901`.`Sprzet` 
+(
+    `id_sprzet` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `Producent` VARCHAR(25)  NOT NULL,
+    `id_producenta` VARCHAR(20)  NULL,
+    `Nazwa` VARCHAR(30)  NOT NULL,
+    `Cena` DECIMAL(5,2)  NOT NULL,
+    `Data_premiery` date  NULL,
+    `Wymiary_opakowania` VARCHAR(15)  NOT NULL,
+    PRIMARY KEY (`_id_sprzet`),
+    UNIQUE INDEX `sprz_id_sprzet_UNIQUE` (`_id_sprzet` ASC)
+) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci;
+
+
+-- Table: Wysylka
+CREATE TABLE IF NOT EXISTS `tin-projekt-lipski-s20901`.`Wysylka` (
+    `id_wysylka` INT UNSIGNED NOT NULL,
+    `Data_wysylki` DATE NULL,
+    `Adres_docelowy` VARCHAR(50)  NOT NULL,
+    `Dane_odbiorcy` VARCHAR(100)  NOT NULL,
+    `Sposob_dostawy` VARCHAR(30)  NOT NULL,
+
+    PRIMARY KEY (`id_wysylka`),
+    UNIQUE INDEX `wys_id_wysylka` (`id_wysylka` ASC)
+) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci;
+;
+
+-- Table: Sprzet_do_sprzedazy "ZAMOWIENIA"
+CREATE TABLE IF NOT EXISTS `tin-projekt-lipski-s20901`.`Sprzet_do_sprzedazy` 
+(
+    `id_sprzet_do_sprzedazy` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `sprzet_id` INT NOT NULL,
+    `wysylka_id` INT NOT NULL,
+    `Opakowanie_prezentowe` SMALLINT NOT NULL,
+    `Numer_seryjny` VARCHAR(20) NOT NULL,
+    PRIMARY KEY (`id_sprzet_do_sprzedazy`),
+    UNIQUE INDEX `Sprzet_do_sprzedazy_id_sprzet_do_sprzedazy` (`_id_sprzet_do_sprzedazy` ASC),
+    CONSTRAINT `sprzet_id` FOREIGN KEY (`Sprzet`) REFERENCES `tin-projekt-lipski-s20901`.`Sprzet` (`id_sprzet`),
+    CONSTRAINT `id_wysylka` FOREIGN KEY (`Wysylka`) REFERENCES `tin-projekt-lipski-s20901`.`Wysylka` (`id_wysylka`)
+)ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci;
+
+INSERT IGNORE INTO `tin-projekt-lipski-s20901`.`Sprzet` (`id_sprzet`, `Producent`, `id_producenta`, `Nazwa`, `Cena`, `Data_premiery`, `Wymiary_opakowania`) VALUES
+(1, `AMD`, `AMDID12345`, `RX 6800 XT`, `5320 pln`, 1999-02-02, `26,7 × 12,0 cm`),
+(2, `AMD`, `AMDID12345`, `RX 5600`, `1230 pln`, 2002-03-05, `13,5 × 19,0 cm`),
+(3, `INTEL`, `i912430`, `RX 6800 XT`, `5320 pln`, 2013-07-11, `30,7 × 5,0 cm`)
+;
+
+INSERT IGNORE INTO `tin-projekt-lipski-s20901`.`Wysylka` (`id_wysylka`, `Data_wysylki`, `Adres_docelowy`, `Dane_odbiorcy`, `Sposob_dostawy`) VALUES
+(1, `AMD`, 1999-02-02, `Żwirowa 12 04-123, Gniezno, Polska`, `Andrzej Kowalski`, `Kurier`),
+(2, `AMD`, 2002-03-05, `Walczykowa 6, 02-137, Słupsk, Polska`, `Otylia Jedrzejczyk`, `Odbior osobisty`)
+;
+
+INSERT IGNORE INTO `tin-projekt-lipski-s20901`.`Sprzet_do_sprzedazy` (`id_sprzet_do_sprzedazy`, `Opakowanie_prezentowe`, `Numer_seryjny`) VALUES
+(1, `1`, `P124OASDX1`),
+(2, `0`, `TX31230S9`),
+(3, `0`, `CX124A451`)
+;
+

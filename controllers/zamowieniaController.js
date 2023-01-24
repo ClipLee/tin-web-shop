@@ -1,14 +1,20 @@
 const { Router } = require("express");
 
 exports.showZamowieniaList = (req, res, next) => {
-    res.render('pages/zamowienia/list', {});
+    res.render('pages/zamowienia/list', {
+        navLocation: 'zam'
+    });
 }
 
 exports.showAddZamowieniaForm = (req, res, next) => {
-    res.render('pages/zamowienia/form', {});
+    res.render('pages/zamowienia/form', {
+        navLocation: 'zam'
+    });
 }
 
 exports.showZamowieniaDetails = (req, res, next) => {
-    res.render('pages/zamowienia/list-details', {});
+    res.render('pages/zamowienia/list-details', {
+        navLocation: 'zam'
+    });
 }
 

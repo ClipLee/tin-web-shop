@@ -17,8 +17,8 @@
     <nav>
         <ul>
             <li><a href="/" class="<%= navLocation == 'main' ? 'active' : ''%>">Strona główna</a></li>
-            <li><a href="/zamowienia">Zamówienia</a></li>
-            <li><a href="/sprzet">Sprzęt</a></li>
-            <li><a href="/wysylka" >Wysylka</a></li>
+            <li><a href="/zamowienia" class="<%= navLocation == 'zam' ? 'active' : ''%>">Zamówienia</a></li>
+            <li><a href="/sprzet" class="<%= navLocation == 'sprz' ? 'active' : ''%>">Sprzęt</a></li>
+            <li><a href="/wysylka" class="<%= navLocation == 'wys' ? 'active' : ''%>">Wysylka</a></li>
         </ul>
     </nav>
