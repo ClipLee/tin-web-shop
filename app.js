@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-const sprzetRouter = require('./routes/sprzetRoute'); //pierwsza linia poprawiona -- import nowego routera
+const sprzetRouter = require('./routes/sprzetRoute');
 const wysylkaRouter = require('./routes/wysylkaRoute');
 const zamowieniaRouter = require('./routes/zamowieniaRoute');
 var app = express();
@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/sprzet', sprzetRouter); //druga linia poprawiona -- podlaczenie nowego routera
+app.use('/sprzet', sprzetRouter);
 app.use('/list-wys', wysylkaRouter);
 app.use('/list', zamowieniaRouter);
 
