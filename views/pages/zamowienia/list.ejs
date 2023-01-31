@@ -29,13 +29,13 @@
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="list-details.html" class="ViewDetails">Szczegóły</a>
+                                <a href="/zamowienia/details/:sprzId" class="ViewDetails">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="form-edit.html" class="FormEdit">Edytuj</a>
+                                <a href="/zamowienia/edit/:zamId" class="FormEdit">Edytuj</a>
                             </li>
                             <li>
-                                <a href="list-empty.html" class="FormDelete">Usuń</a>
+                                <a href="/zamowienia/delete/:zamId" class="FormDelete">Usuń</a>
                             </li>
                         </ul>
                     </td>
@@ -52,13 +52,13 @@
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="list-details.html" class="ViewDetails">Szczegóły</a>
+                                <a href="/zamowienia/details/:sprzId" class="ViewDetails">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="form-edit.html" class="FormEdit">Edytuj</a>
+                                <a href="/zamowienia/edit/:zamId" class="FormEdit">Edytuj</a>
                             </li>
                             <li>
-                                <a href="list-empty.html" class="FormDelete">Usuń</a>
+                                <a href="/zamowienia/delete/:zamId" class="FormDelete">Usuń</a>
                             </li>
                         </ul>
                     </td>
@@ -67,6 +67,6 @@
                 <!--Tutaj wstaw wiersze dodatkowe-->
             </tbody>
         </table>
-        <p><a href="form.html" class="button-add">Wprowadź nowe zamówienie</a></p>
+        <p><a href="/zamowienia/add" class="button-add">Wprowadź nowe zamówienie</a></p>
     </main>
     <%- include('../../fragments/footer.ejs') %>
