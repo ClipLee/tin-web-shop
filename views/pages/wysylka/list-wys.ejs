@@ -4,7 +4,7 @@
         <table class="table-list">
             <thead>
                 <tr>
-                    <th></th> 
+                    <th></th>
                     <th>Adres docelowy</th>
                     <th>Data wysyłki</th>
                     <th>Dane odbiorcy</th>
@@ -24,14 +24,14 @@
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="/pages/wysylka/list-wys-details.html" class="ViewDetails">Szczegóły</a>
+                                <a href="/wysylka/details/:wysId" class="ViewDetails">Szczegóły</a>
                             </li>
-                            
+
                             <li>
-                                <a href="/pages/wysylka/form-wys-edit.html" class="FormEdit">Edytuj</a>
+                                <a href="/wysylka/edit/:wysId" class="FormEdit">Edytuj</a>
                             </li>
                             <li>
-                                <a href="/pages/wysylka/list-wys-empty.html" class="FormDelete">Usuń</a>
+                                <a href="/wysylka/delete/:wysId" class="FormDelete">Usuń</a>
                             </li>
                         </ul>
                     </td>
@@ -47,13 +47,13 @@
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="/pages/wysylka/list-wys-details.html" class="ViewDetails">Szczegóły</a>
+                                <a href="/wysylka/details/:wysId" class="ViewDetails">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="/pages/wysylka/form-wys-edit.html" class="FormEdit">Edytuj</a>
+                                <a href="/wysylka/edit/:wysId" class="FormEdit">Edytuj</a>
                             </li>
                             <li>
-                                <a href="/pages/wysylka/list-wys-empty.html" class="FormDelete">Usuń</a>
+                                <a href="/wysylka/delete/:wysId" class="FormDelete">Usuń</a>
                             </li>
                         </ul>
                     </td>
@@ -61,6 +61,6 @@
                 <!--Tutaj wstaw wiersze dodatkowe-->
             </tbody>
         </table>
-        <p><a href="/pages/wysylka/form-wys.html" class="button-add">Dodaj nowe dane adresowe</a></p>
+        <p><a href="/wysylka/add" class="button-add">Dodaj nowe dane adresowe</a></p>
     </main>
     <%- include('../../fragments/footer.ejs') %>
