@@ -25,13 +25,13 @@
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="list-sprz-details.html" class="ViewDetails">Szczegóły</a>
+                                <a href="/sprzet/details/:sprzId" class="ViewDetails">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="form-sprz-edit.html" class="FormEdit">Edytuj</a>
+                                <a href="/sprzet/edit/:sprzId" class="FormEdit">Edytuj</a>
                             </li>
                             <li>
-                                <a href="list-sprz-empty.html" class="FormDelete">Usuń</a>
+                                <a href="sprzet/delete/:sprzId" class="FormDelete">Usuń</a>
                             </li>
                         </ul>
                     </td>
@@ -47,13 +47,13 @@
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="/pages/sprzet/list-sprz-details.html" class="ViewDetails">Szczegóły</a>
+                                <a href="/sprzet/details/:sprzId" class="ViewDetails">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="form-sprz-edit.html" class="FormEdit">Edytuj</a>
+                                <a href="/sprzet/edit/:sprzId" class="FormEdit">Edytuj</a>
                             </li>
                             <li>
-                                <a href="list-sprz-empty.html" class="FormDelete">Usuń</a>
+                                <a href="/sprzet/delete/:sprzId" class="FormDelete">Usuń</a>
                             </li>
                         </ul>
                     </td>
@@ -61,6 +61,6 @@
                 <!--Tutaj wstaw wiersze dodatkowe-->
             </tbody>
         </table>
-        <p><a href="form-sprz.html" class="button-add">Wprowadź nowy sprzęt</a></p>
+        <p><a href="/sprzet/add" class="button-add">Wprowadź nowy sprzęt</a></p>
     </main>
     <%- include('../../fragments/footer.ejs') %>
