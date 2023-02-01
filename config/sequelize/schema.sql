@@ -1,1 +1,1 @@
-CREATE SCHEMA IF NOT EXISTS 'tin-projekt-lipski-s20901';
+CREATE SCHEMA IF NOT EXISTS `tin-projekt-lipski-s20901`;
