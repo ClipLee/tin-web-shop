@@ -6,7 +6,7 @@ const Sprzet = sequelize.define('Sprzet', {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         allowNull: false,
-        primaryKey: true,
+        primaryKey: true
     },
     Producent: {
         type: Sequelize.STRING,
@@ -14,19 +14,19 @@ const Sprzet = sequelize.define('Sprzet', {
     },
     id_producenta: {
         type: Sequelize.STRING,
-        allowNull: true,
+        allowNull: true
     },
     Nazwa: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: false
     },
     Cena: {
         type: Sequelize.DECIMAL(5,2),
-        allowNull: false,
+        allowNull: false
     },
     Data_premiery: {
         type: Sequelize. DATE,
-        allowNull: true;
+        allowNull: true
     },
     Wymiary_opakowania: {
         type: Sequelize.STRING,
