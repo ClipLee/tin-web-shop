@@ -25,3 +25,5 @@ const Sprzet_do_sprzedazy = sequelize.define('Sprzet_do_sprzedazy', {
         allowNull: false
     }
 });
+
+module.exports = Sprzet_do_sprzedazy;
