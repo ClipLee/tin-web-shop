@@ -1,4 +1,4 @@
-const SprzetRepository = requestAnimationFrame('../repository/sequelize/SprzetRepository');
+const SprzetRepository = require('../repository/sequelize/SprzetRepository');
 
 exports.getSprzet = (req, res, next) => {
     SprzetRepository.getSprzet()
@@ -31,7 +31,7 @@ exports.createSprzet = (req, res, next) => {
         })
         .catch(err => {
             if (!err.statusCode) {
-                err.statusCode = 5--;
+                err.statusCode = 500;
             }
             next(err);
         });
