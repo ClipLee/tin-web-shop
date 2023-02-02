@@ -3,7 +3,7 @@ const SprzetRepository = require('../repository/sequelize/SprzetRepository');
 exports.getSprzet = (req, res, next) => {
     SprzetRepository.getSprzet()
         .then(sprzs => {
-            res.status(200), json(emps);
+            res.status(200), json(sprzs);
         })
         .catch(err => {
             console.log(err);
@@ -19,7 +19,7 @@ exports.getSprzetById = (req, res, next) => {
                     message: 'Sprzet with id: ' + sprzId + ' not found'
                 })
             } else {
-                res.status(200).json(emp);
+                res.status(200).json(sprz);
             }
         });
 };
@@ -38,8 +38,8 @@ exports.createSprzet = (req, res, next) => {
 };
 
 
-exports.updateSprzet = (req, res, next => {
-    const sprzId = req.params.empId;
+exports.updateSprzet = (req, res, next) => {
+    const sprzId = req.params.sprzId;
     SprzetRepository.updateSprzet(sprzId, req.body)
         .then(result => {
             if (!err.statusCode) {
@@ -48,7 +48,7 @@ exports.updateSprzet = (req, res, next => {
                 next(err);
             }
         });
-});
+};
 
 exports.deleteSprzet = (req, res, next) => {
     const sprzId = req.params.sprzId;

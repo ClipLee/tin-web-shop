@@ -12,7 +12,7 @@ const zamowieniaRouter = require('./routes/zamowieniaRoute');
 var app = express();
 
 const sprzApiRouter = require('./routes/api/SprzetApiRoute');
-app.use('/api/sprzet')
+app.use('/api/sprzet', sprzApiRouter);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
