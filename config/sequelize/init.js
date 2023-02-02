@@ -19,9 +19,9 @@ module.exports = () => {
         .then(sprzts => {
             if (!sprzts || sprzts.length == 0) {
                 return Sprzet.bulkCreate([
-                    { Producent: 'AMD', id_producenta: 'AMDID12345', Nazwa: 'RX 6800 XT', Cena: '5320 pln', Data_premiery: '1999-02-02', Wymiary_opakowania: '26,7 × 12,0 cm' },
-                    { Producent: 'AMD', id_producenta: 'AMDID12345', Nazwa: 'RX 5600', Cena: '1230 pln', Data_premiery: '2002-03-05', Wymiary_opakowania: '13,5 × 19,0 cm' },
-                    { Producent: 'Intel', id_producenta: 'i912430', Nazwa: 'i9-12900KF', Cena: '5320 pln', Data_premiery: '2013-07-11', Wymiary_opakowania: '30,7 × 5,0 cm' },
+                    { Producent: 'AMD', id_producenta: 'AMDID12345', Nazwa: 'RX 6800 XT', Cena: 5320.00, Data_premiery: '1999-02-02', Wymiary_opakowania: '26,7 × 12,0 cm' },
+                    { Producent: 'AMD', id_producenta: 'AMDID12345', Nazwa: 'RX 5600', Cena: 1230.50, Data_premiery: '2002-03-05', Wymiary_opakowania: '13,5 × 19,0 cm' },
+                    { Producent: 'Intel', id_producenta: 'i912430', Nazwa: 'i9-12900KF', Cena: 5320.99, Data_premiery: '2013-07-11', Wymiary_opakowania: '30,7 × 5,0 cm' },
                 ])
                     .then(() => {
                         return Sprzet.findAll();

@@ -21,7 +21,7 @@ const Sprzet = sequelize.define('Sprzet', {
         allowNull: false
     },
     Cena: {
-        type: Sequelize.DECIMAL(5,2),
+        type: Sequelize.DECIMAL(10,2),
         allowNull: false
     },
     Data_premiery: {
