@@ -47,7 +47,7 @@ module.exports = () => {
                 return wyss;
             }
         })
-        .then(depts => {
+        .then(wyss => {
             allWyss = wyss;
             return Sprzet_do_sprzedazy.findAll();
         })
