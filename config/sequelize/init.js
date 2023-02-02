@@ -7,7 +7,6 @@ const Sprzet_do_sprzedazy = require('../../model/sequelize/Sprzet_do_sprzedazy')
 module.exports = () => {
     Sprzet.hasMany(Sprzet_do_sprzedazy, { as: 'sprzet_do_sprzedazy', foreignKey: { name: 'sprz_id', allowNull: false }, constraints: true, onDelete: 'CASCADE' });
     Sprzet_do_sprzedazy.belongsTo(Sprzet, { as: 'sprzet', foreignKey: { name: 'sprz_id', allowNull: false } });
-
     Wysylka.hasMany(Sprzet_do_sprzedazy, { as: 'sprzet_do_sprzedazy', foreignKey: { name: 'wys_id', allowNull: false }, constraints: true, onDelete: 'CASCADE' });
     Sprzet_do_sprzedazy.belongsTo(Wysylka, { as: 'wysylka', foreignKey: { name: 'wys_id', allowNull: false } });
 
