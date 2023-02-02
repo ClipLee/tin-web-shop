@@ -1,6 +1,6 @@
 const Sprzet = require("../../model/sequelize/Sprzet");
 const Wysylka = require("../../model/sequelize/Wysylka");
-const Sprzet_do_sprzedarzy = require("../../model/sequelize/Sprzed_do_sprzedazy");
+const Sprzet_do_sprzedarzy = require("../../model/sequelize/Sprzet_do_sprzedazy");
 
 exports.getSprzets = () => {
     return Sprzet.findAll();

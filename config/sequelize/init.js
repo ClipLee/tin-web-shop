@@ -2,7 +2,7 @@ const sequelize = require('./sequelize');
 
 const Sprzet = require('../../model/sequelize/Sprzet');
 const Wysylka = require('../../model/sequelize/Wysylka');
-const Sprzet_do_sprzedazy = require('../../model/sequelize/Sprzed_do_sprzedazy');
+const Sprzet_do_sprzedazy = require('../../model/sequelize/Sprzet_do_sprzedazy');
 
 module.exports = () => {
     Sprzet.hasMany(Sprzet_do_sprzedazy, { as: 'sprzet_do_sprzedazy', foreignKey: { name: 'sprz_id', allowNull: false }, constraints: true, onDelete: 'CASCADE' });
