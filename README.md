@@ -6,14 +6,14 @@ Projekt sklepu internetowego z-kom, zaimplementowany z użyciem technologii EJS,
 
 Projekt składa się z następujących głównych części:
 
-- api/: Zawiera pliki API, które obsługują żądania HTTP do serwera.
-- controllers/: Zawiera kontrolery, które obsługują logikę biznesową aplikacji.
-- model/: Zawiera modele danych, które definiują strukturę danych w bazie danych.
-- repository/: Zawiera repozytoria, które obsługują operacje na bazie danych.
-- routes/: Zawiera pliki tras, które definiują ścieżki URL aplikacji.
-- views/: Zawiera pliki widoków, które definiują, jak dane są prezentowane użytkownikowi.
-- public/: Zawiera pliki statyczne, takie jak CSS, JavaScript i obrazy.
-- config/: Zawiera pliki konfiguracyjne, takie jak konfiguracja połączenia z bazą danych.
+- `api/`: Zawiera pliki API, które obsługują żądania HTTP do serwera.
+- `controllers/`: Zawiera kontrolery, które obsługują logikę biznesową aplikacji.
+- `model/`: Zawiera modele danych, które definiują strukturę danych w bazie danych.
+- `repository/`: Zawiera repozytoria, które obsługują operacje na bazie danych.
+- `routes/`: Zawiera pliki tras, które definiują ścieżki URL aplikacji.
+- `views/`: Zawiera pliki widoków, które definiują, jak dane są prezentowane użytkownikowi.
+- `public/`: Zawiera pliki statyczne, takie jak CSS, JavaScript i obrazy.
+- `config/`: Zawiera pliki konfiguracyjne, takie jak konfiguracja połączenia z bazą danych.
 
 ## Uruchomienie projektu
 
